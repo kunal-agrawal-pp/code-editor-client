@@ -1,0 +1,147 @@
+/* @import 'xterm/css/xterm.css'; */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #FCF596;
+    --color-2: #FBD288;
+    --color-3: #FF9C73;
+    --color-4: #FF4545;
+
+    --skin-color: #f7f4ca;
+    --secondary-color: #e57e00;
+    --error-color: red;
+
+    --logo-color: #4b0082;
+
+    --grey-color-100: #f2f2f2; 
+    --grey-color-900: #3B3B3B;
+    --black: #000000;
+    --white: #ffffff;
+
+    --br-1: 0.3rem;
+    --br-2: 0.4rem;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--skin-color);
+    font-family: "Fredoka", system-ui;
+}
+
+body main, #root {
+    width: 100%;
+    height: 100%;
+}
+
+/* nessary classes */
+.no-img {
+    pointer-events: none;
+    cursor: cell;
+}
+
+/* Background color property */
+.bg-skin-color {
+    background-color: var(--skin-color);
+}
+
+/* color property */
+.txt-black {
+    color: var(--black);
+}
+
+.txt-white {
+    color: var(--white);
+}
+
+.txt-secondary-color {
+    color: var(--secondary-color);
+}
+
+.txt-logo-color {
+    color: var(--logo-color);
+}
+
+.txt-error {
+    color: var(--error-color);
+}
+
+/* border radius */
+.br-1 {
+    border-radius: var(--br-1);
+}
+
+/* input */
+.input-box {
+    width: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: var(--br-1);
+    padding: 0.3rem 0.4rem;
+    transition: 0.3s all ease-in-out;
+    height: 70%;
+}
+
+.input-box img {
+    width: 20px;
+    height: 100%;
+}
+
+.txt-input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    /* width: calc(100% - 3.5rem - 20px); */
+    width: 80%;
+    padding: 0 0.5rem;
+    transition: 0.3s all ease-in-out;
+}
+
+.button {
+    background-color: var(--color-4);
+    color: white;
+    border-radius: var(--br-2);
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: var(--color-3) !important;
+    transform: scale(1.05);
+}
+
+/* button */
+.button-code {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.3rem;
+    border-radius: var(--br-1);
+    /* width: 3.5rem; */
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transition-1 {
+    transition: 0.3s all ease-in-out;
+}
+
+/* OVERWRITTING Shadcn ui compoents css */
+.dropdown-item:hover {
+    background-color: var(--grey-color-100) !important;
+    color: black !important;
+    transition: background-color 0.2s, color 0.2s;
+}

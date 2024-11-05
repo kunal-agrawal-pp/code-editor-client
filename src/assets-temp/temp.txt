@@ -1,0 +1,13 @@
+// import { ReactComponent as SearchSVG } from '../assets/search.svg';
+// import { ReactComponent as SidebarSVG } from '../assets/sidebar.svg';
+
+// import sidebarIcon from '../assets/sidebar.svg';
+
+
+// import { Search } from 'lucide-react';
+// import PopoverHover from './PopoverHover';
+
+ <div className="color-skin-6 text-[20px] rotated-text text-center align-center leading-[11px]">
+    <span className="rotate-left">B</span>
+    <span className="rotate-right">F</span>
+</div>
